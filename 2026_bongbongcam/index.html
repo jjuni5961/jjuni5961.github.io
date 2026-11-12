@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAISON BONGBONG ★★★ | 2026 봉봉캠프 그랜드 테이스팅 메뉴</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Concierge Bar -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand-mark">
+        <a class="ctrl-btn" href="../" style="text-decoration:none;">← 홈</a>
+        <span class="brand-stars">★★★ MICHELIN CAMP</span>
+        <span class="brand-title">MAISON BONGBONG</span>
+      </div>
+
+      <div class="topbar-controls">
+        <button id="prevPageBtn" class="ctrl-btn" type="button">← 이전 페이지</button>
+        <span id="pageCounter" class="page-counter">PAGE 01 / 10</span>
+        <button id="nextPageBtn" class="ctrl-btn" type="button">다음 페이지 →</button>
+        <button id="toggleViewBtn" class="ctrl-btn" type="button">전체 페이지 펼쳐보기</button>
+        <button id="printBtn" class="ctrl-btn" type="button">PDF / 인쇄</button>
+      </div>
+    </div>
+
+    <nav class="chapter-strip" aria-label="코스 목차">
+      <button class="chapter-pill is-current" type="button">01. 표지</button>
+      <button class="chapter-pill" type="button">02. 메세나 명예의 전당</button>
+      <button class="chapter-pill" type="button">03. Act I · 1일차 저녁</button>
+      <button class="chapter-pill" type="button">04. Act II · 2일차 저녁</button>
+      <button class="chapter-pill" type="button">05. Act III · 오후 비스트로</button>
+      <button class="chapter-pill" type="button">06. Act IV-A · 안주 01~04</button>
+      <button class="chapter-pill" type="button">07. Act IV-B · 안주 05~09</button>
+      <button class="chapter-pill" type="button">08. Act IV-C · 안주 10~16</button>
+      <button class="chapter-pill" type="button">09. Act V · 아침 &amp; 주전부리</button>
+      <button class="chapter-pill" type="button">10. 셀러 &amp; 100% 인벤토리</button>
+    </nav>
+  </header>
+
+  <main class="booklet-stage">
+
+    <!-- ==================== PAGE 1: COVER ==================== -->
+    <section class="menu-page is-visible" data-page="1">
+      <div class="page-frame">
+        <span class="corner corner-tl"></span><span class="corner corner-tr"></span>
+        <span class="corner corner-bl"></span><span class="corner corner-br"></span>
+
+        <div class="cover-layout">
+          <div class="michelin-seal">
+            <span class="stars">★ ★ ★</span>
+            <span class="label">Guide Gastronomique du Camping · 2026</span>
+          </div>
+
+          <h1 class="cover-title">MAISON BONGBONG</h1>
+          <p class="cover-kr-title">2026 봉봉캠프 2박 3일 그랜드 테이스팅 코스</p>
+
+          <div class="cover-hero-wrap">
+            <img src="images/00_cover.jpg" alt="가을 숲속 촛불이 켜진 미슐랭 야외 파인다이닝 테이블" />
+          </div>
+
+          <p class="cover-dedication">
+            부탄가스 8통과 이소가스, 그리고 피크닉 와인잔 위에 피어오르는 전설적인 2박 3일의 미식 서사시.<br />
+            119,700원(운송비 별도) 보일링 시푸드부터 나정순 쭈꾸미, <strong>단 한 개도 빠짐없는 16가지 심야 안주 풀코스</strong>, 신라면 대 진라면 20봉지 대전, 그리고 정체불명의 <em>“청종?? 백화수복”</em>까지 — 미슐랭 3스타의 예우로 헌정합니다.
+          </p>
+
+          <div class="cover-toc">
+            <button class="toc-item" type="button" data-target-page="1">
+              <span class="toc-num">PROLOGUE · PAGE 02</span>
+              <span class="toc-name">셰프의 서문 &amp; 후원자 명단</span>
+            </button>
+            <button class="toc-item" type="button" data-target-page="2">
+              <span class="toc-num">ACT I · PAGE 03</span>
+              <span class="toc-name">1일 저녁: 삼겹살 &amp; 새우 60미</span>
+            </button>
+            <button class="toc-item" type="button" data-target-page="3">
+              <span class="toc-num">ACT II · PAGE 04</span>
+              <span class="toc-name">2일 저녁: 보일링시푸드 &amp; 쭈꾸미</span>
+            </button>
+            <button class="toc-item" type="button" data-target-page="4">
+              <span class="toc-num">ACT III · PAGE 05</span>
+              <span class="toc-name">오후 간식: 떡볶이·만두·파스타</span>
+            </button>
+            <button class="toc-item" type="button" data-target-page="5">
+              <span class="toc-num">ACT IV-A · PAGE 06</span>
+              <span class="toc-name">16대 안주 ① (N° 01~04 · 국물/닭발)</span>
+            </button>
+            <button class="toc-item" type="button" data-target-page="6">
+              <span class="toc-num">ACT IV-B · PAGE 07</span>
+              <span class="toc-name">16대 안주 ② (N° 05~09 · 치즈·전·브륄레)</span>
+            </button>
+            <button class="toc-item" type="button" data-target-page="7">
+              <span class="toc-num">ACT IV-C · PAGE 08</span>
+              <span class="toc-name">16대 안주 ③ (N° 10~16 · 생선·계란·스팸)</span>
+            </button>
+            <button class="toc-item" type="button" data-target-page="8">
+              <span class="toc-num">ACT V · PAGE 09</span>
+              <span class="toc-name">아침 해장 (라면대전·누룽지) &amp; 주전부리</span>
+            </button>
+            <button class="toc-item" type="button" data-target-page="9">
+              <span class="toc-num">CELLAR · PAGE 10</span>
+              <span class="toc-name">16대 안주 체크보드 · 셀러 · 전 식자재</span>
+            </button>
+          </div>
+        </div>
+
+        <footer class="page-footer">
+          <span>Maison Bivouac · Grand Menu</span>
+          <span>Page 01 / 10</span>
+        </footer>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 2: PROLOGUE & PATRONS ==================== -->
+    <section class="menu-page" data-page="2">
+      <div class="page-frame">
+        <span class="corner corner-tl"></span><span class="corner corner-tr"></span>
+        <span class="corner corner-bl"></span><span class="corner corner-br"></span>
+
+        <header class="page-header">
+          <p class="act-eyebrow">Prologue &amp; Les Mécènes</p>
+          <h2 class="act-title">셰프의 서문 &amp; 식재료 메세나 명예의 전당</h2>
+          <p class="act-subtitle">Nos Nobles Pourvoyeurs qui ont Bâti ce Festin</p>
+        </header>
+
+        <blockquote class="prologue-quote">
+          “위대한 캠핑 요리는 거창한 주방에서 나오지 않습니다. 새우 2kg을 들고 묵묵히 걸어오는 발걸음, 운송비 별도 119,700원을 결제하는 대담한 손가락, 그리고 끝없이 쏟아지는 일회용 소주잔과 다진 마늘 속에서 비로소 탄생합니다. 오늘 밤, 우리 모두의 위장에 별 세 개를 수여합니다.”
+        </blockquote>
+
+        <div class="patron-grid">
+          <article class="patron-card is-mvp">
+            <span class="patron-rank">Grand Chancelier · 최다 조달 MVP</span>
+            <h3 class="patron-name">영진 (Yeong-jin)</h3>
+            <p class="patron-title">왕립 물류총감 겸 비축의 수호자</p>
+            <p class="patron-items">
+              새우 2kg(60미), 맛술, 나정순 양념쭈꾸미(3팩), 밀가루, 삼진어묵탕, 닭발 1.8kg(900g×2), 와인용 치즈, 들기름, 김치·부침·튀김가루, 케찹·마요네즈, 스팸, 진라면 10봉, 김·캔참치, 양념통·식용유, 일회용 젓가락, 쓰봉, 다진마늘까지 사실상 식자재 마트를 통째로 이고 온 절대 군주.
+            </p>
+          </article>
+
+          <article class="patron-card">
+            <span class="patron-rank">Amiral des Mers</span>
+            <h3 class="patron-name">호준 (Ho-jun)</h3>
+            <p class="patron-title">대양의 보일링 제독 겸 파스타 공학자</p>
+            <p class="patron-items">
+              본 코스 최고가 시그니처 <strong>보일링시푸드 풀세트(119,700원·운송비 별도)</strong>의 단독 스폰서. 여기에 파스타 소스 3통에 맞서 과감히 <strong>파스타면 4봉지</strong>를 투하한 카리스마 탄수화물 전략가.
+            </p>
+          </article>
+
+          <article class="patron-card">
+            <span class="patron-rank">Duc de la Pêche</span>
+            <h3 class="patron-name">범규 (Beom-gyu)</h3>
+            <p class="patron-title">심해 어업 공작 겸 교자 마에스트로</p>
+            <p class="patron-items">
+              우럭·고등어 생선구이 3마리와 쫄깃한 갑오징어를 하사한 바다의 귀족. 동시에 비비고 교자 2봉과 양념통·식용유까지 챙긴 문무겸비 조달관.
+            </p>
+          </article>
+
+          <article class="patron-card">
+            <span class="patron-rank">Baron d'Œuf</span>
+            <h3 class="patron-name">형근 (Hyeong-geun)</h3>
+            <p class="patron-title">30구 양계장 남작 겸 브런치 장인</p>
+            <p class="patron-items">
+              계란 30구 대란 한 판과 식빵을 통째로 공급하며 심야 계란후라이·계란말이부터 다음날 아침 계란토스트까지 캠프의 단백질과 아침을 책임지는 황금 손.
+            </p>
+          </article>
+
+          <article class="patron-card">
+            <span class="patron-rank">Sommelière de Kurly</span>
+            <h3 class="patron-name">현미 (Hyeon-mi)</h3>
+            <p class="patron-title">새벽배송 미식 큐레이터</p>
+            <p class="patron-items">
+              마켓컬리 직송 해물짬뽕탕 밀키트를 엄선해 밤안개 속 얼큰한 국물의 품격을 한 단계 끌어올린 샛별 큐레이터.
+            </p>
+          </article>
+
+          <article class="patron-card">
+            <span class="patron-rank">Maître du Beurre</span>
+            <h3 class="patron-name">이수 (I-su)</h3>
+            <p class="patron-title">황금 버터와 고구마의 연금술사</p>
+            <p class="patron-items">
+              새우구이를 미슐랭 풍미로 승화시키는 핵심 열쇠 ‘버터’와 모닥불 디저트 ‘고구마’, 그리고 젓가락을 찬조한 감성 터치의 달인.
+            </p>
+          </article>
+
+          <article class="patron-card">
+            <span class="patron-rank">Gardiens du Confort</span>
+            <h3 class="patron-name">종주 &amp; 경민</h3>
+            <p class="patron-title">파인 다이닝 테이블웨어·위생 수호 기사단</p>
+            <p class="patron-items">
+              <strong>종주:</strong> 어떤 기름기와 국물 앞에서도 굴하지 않는 휴지 2팩.<br />
+              <strong>경민:</strong> 에스프레소와 소주·맥주·안주를 모두 아우르는 종이컵(소·대) 1줄씩 완비!
+            </p>
+          </article>
+        </div>
+
+        <footer class="page-footer">
+          <span>Les Mécènes du Goût</span>
+          <span>Page 02 / 10</span>
+        </footer>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 3: ACT I — DAY 1 DINNER ==================== -->
+    <section class="menu-page" data-page="3">
+      <div class="page-frame">
+        <span class="corner corner-tl"></span><span class="corner corner-tr"></span>
+        <span class="corner corner-bl"></span><span class="corner corner-br"></span>
+
+        <header class="page-header">
+          <p class="act-eyebrow">Acte I · Premier Dîner</p>
+          <h2 class="act-title">1일차 저녁: 불꽃과 바다의 서곡</h2>
+          <p class="act-subtitle">Prélude au Charbon de Bois et Crustacés Flambés</p>
+        </header>
+
+        <div class="course-stack">
+          <article class="course-block">
+            <div class="dish-photo-card">
+              <img src="images/01_pork.jpg" alt="미슐랭 스타일 삼겹살과 목살 쌈채소 플레이팅" />
+              <div class="photo-caption">
+                <span>Plat 01 · Le Porc Sacré</span>
+                <span>Day 1 Dinner</span>
+              </div>
+            </div>
+            <div class="dish-info">
+              <div class="dish-meta-row">
+                <span class="badge badge-time">1일 저녁 메인 I</span>
+                <span class="badge badge-ok">쌈장 구매완료</span>
+              </div>
+              <span class="dish-fr-name">Poitrine &amp; Échine de Porc Grillées au Feu de Camp</span>
+              <h3 class="dish-kr-name">그릴드 삼겹·목살 듀오와 계절 쌈채소 부케</h3>
+              <p class="dish-desc">
+                첫날 밤 불판의 순결함을 깨우는 2박 3일의 개막식. 기름진 마블링의 삼겹살과 탄탄한 식감의 목살을 노릇하게 시어링해 낸 뒤, 아삭한 쌈무 리본과 상추·깻잎·고추·마늘·양파로 정교하게 랩핑해 즐기는 K-파인다이닝의 정수. 기분이 내키면 <em>“찌개류(옵션)”</em>가 예고 없이 소환됩니다.
+              </p>
+              <div class="dish-ingredients">
+                <strong>재료 아카이브:</strong> 삼겹살, 목살, 쌈장, 상추, 깻잎, 쌈무, 양파, 마늘, 찌개류(옵션)
+              </div>
+              <div class="pairing-note">
+                <span class="label">Pairing</span>
+                <span>일회용 소주잔에 따른 차가운 소주 혹은 피크닉 와인잔 레드</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="course-block is-reversed">
+            <div class="dish-photo-card">
+              <img src="images/02_prawns.jpg" alt="버터와 맛술로 플람베한 왕새우 구이" />
+              <div class="photo-caption">
+                <span>Plat 02 · 60 Crevettes</span>
+                <span>Day 1 Dinner</span>
+              </div>
+            </div>
+            <div class="dish-info">
+              <div class="dish-meta-row">
+                <span class="badge badge-time">1일 저녁 메인 II</span>
+                <span class="badge badge-patron">구매: 영진 · 찬조: 이수/영진</span>
+              </div>
+              <span class="dish-fr-name">Soixante Crevettes Rôties au Beurre d'Isue &amp; Mirin</span>
+              <h3 class="dish-kr-name">이수표 버터와 영진 맛술로 플람베한 새우 60미 대행진</h3>
+              <p class="dish-desc">
+                약 60마리(2kg)에 달하는 갑각류 군단이 소금 침대 위가 아닌 <strong>이수의 황금 버터</strong>와 <strong>영진의 맛술</strong>을 만나 붉게 타오릅니다. 새우 머리의 고소함이 폭발할 때쯤 다들 껍질 까느라 대화가 잠잠해지는 ‘침묵의 미식 타임’이 찾아옵니다.
+              </p>
+              <div class="dish-ingredients">
+                <strong>재료 &amp; 찬조:</strong> 새우 2kg / 60미 전후(영진구매) + 버터(이수 찬조) + 맛술(영진 찬조)
+              </div>
+              <div class="pairing-note">
+                <span class="label">Pairing</span>
+                <span>시원하게 칠링한 사이다 2L 또는 피크닉 와인잔 화이트</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <footer class="page-footer">
+          <span>Acte I · Premier Dîner</span>
+          <span>Page 03 / 10</span>
+        </footer>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 4: ACT II — DAY 2 DINNER ==================== -->
+    <section class="menu-page" data-page="4">
+      <div class="page-frame">
+        <span class="corner corner-tl"></span><span class="corner corner-tr"></span>
+        <span class="corner corner-bl"></span><span class="corner corner-br"></span>
+
+        <header class="page-header">
+          <p class="act-eyebrow">Acte II · Le Grand Festin du Deuxième Soir</p>
+          <h2 class="act-title">2일차 저녁: 119,700원의 대서사시</h2>
+          <p class="act-subtitle">Fruits de Mer Impériaux &amp; Poulpe Légendaire</p>
+        </header>
+
+        <div class="course-stack">
+          <article class="course-block">
+            <div class="dish-photo-card">
+              <img src="images/03_seafood.jpg" alt="미슐랭 코코트에 담긴 보일링 시푸드와 소세지" />
+              <div class="photo-caption">
+                <span>Plat 03 · 119,700 KRW</span>
+                <span>Day 2 Signature</span>
+              </div>
+            </div>
+            <div class="dish-info">
+              <div class="dish-meta-row">
+                <span class="badge badge-time">2일 저녁 시그니처</span>
+                <span class="badge badge-ok">구매완료 (호준)</span>
+                <span class="badge badge-warn">찬조 요청: 비엔나 소세지!</span>
+              </div>
+              <span class="dish-fr-name">Grand Plateau de Fruits de Mer « 119,700 » (Hors Livraison)</span>
+              <h3 class="dish-kr-name">호준 제독의 보일링 시푸드 그랜드 플래터</h3>
+              <p class="dish-desc">
+                <em>“밀키트 2세트 + 탈각새우 900g + 해물모둠 600g + 오징어 500g = 119,700원(운송비 별도).”</em> 영수증 숫자부터 웅장한 본 코스의 절대 간판. 이미 껍질이 벗겨진 탈각새우 900g 덕분에 손이 깨끗한 귀족적 식사가 보장됩니다. 단, 셰프의 애절한 메모가 남아 있으니: <strong>“비엔나 소세지 구매 부탁드립니다.”</strong>
+              </p>
+              <div class="dish-ingredients">
+                <strong>재료 내역:</strong> 밀키트 2세트, 탈각새우 900g, 해물모둠 600g, 오징어 500g (호준) · <strong>긴급 찬조 요청:</strong> 비엔나 소세지
+              </div>
+              <div class="pairing-note">
+                <span class="label">Pairing</span>
+                <span>매콤한 갈릭 버터 소스를 중화하는 탄산음료 2L &amp; 생수</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="course-block is-reversed">
+            <div class="dish-photo-card">
+              <img src="images/04_jjukkumi.jpg" alt="나정순 양념쭈꾸미와 삼겹살, 날치알 캐비어" />
+              <div class="photo-caption">
+                <span>Plat 04 · Maître Na Jeong-sun</span>
+                <span>Day 2 Dinner</span>
+              </div>
+            </div>
+            <div class="dish-info">
+              <div class="dish-meta-row">
+                <span class="badge badge-time">2일 저녁 메인 II</span>
+                <span class="badge badge-patron">영진구매 (15,000 × 3)</span>
+                <span class="badge badge-ok">날치알 구매완료</span>
+              </div>
+              <span class="dish-fr-name">Poulpe Épicé « Na Jeong-sun » &amp; Tobiko sur Poitrine de Porc</span>
+              <h3 class="dish-kr-name">명인 나정순 쭈꾸미 삼겹 볶음과 날치알 캐비어</h3>
+              <p class="dish-desc">
+                전설의 명가 나정순 할머니의 붉은 비법 양념(15,000원×3팩)을 영진 바이어가 3연타로 공수했습니다. 지글지글 녹아내린 삼겹살 기름과 버섯·마늘이 매콤한 쭈꾸미와 엉키고, 향긋한 깻잎 위에 주황빛 날치알 캐비어를 듬뿍 얹어 한 입에 넣으면 캠프장이 곧 미슐랭 3스타로 변합니다.
+              </p>
+              <div class="dish-ingredients">
+                <strong>재료 아카이브:</strong> 양념쭈꾸미(나정순/15,000×3/영진구매), 삼겹살, 날치알, 깻잎, 마늘, 버섯
+              </div>
+              <div class="pairing-note">
+                <span class="label">Pairing</span>
+                <span>매운맛 직후 마요네즈 한 방울 &amp; 갈아만든배</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <footer class="page-footer">
+          <span>Acte II · Le Grand Festin</span>
+          <span>Page 04 / 10</span>
+        </footer>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 5: ACT III — AFTERNOON BISTRO ==================== -->
+    <section class="menu-page" data-page="5">
+      <div class="page-frame">
+        <span class="corner corner-tl"></span><span class="corner corner-tr"></span>
+        <span class="corner corner-bl"></span><span class="corner corner-br"></span>
+
+        <header class="page-header">
+          <p class="act-eyebrow">Acte III · Les Intermèdes de l'Après-Midi</p>
+          <h2 class="act-title">1·2일차 오후: 애프터눈 비스트로 &amp; 분식 아뜰리에</h2>
+          <p class="act-subtitle">Bistrot d'Après-Midi, Pâtes &amp; Galette de Kimchi</p>
+        </header>
+
+        <div class="course-stack">
+          <article class="course-block">
+            <div class="dish-photo-card">
+              <img src="images/05_tteokbokki_mandu.jpg" alt="미슐랭 스타일 로얄 떡볶이와 눈꽃 군만두" />
+              <div class="photo-caption">
+                <span>Plat 05 &amp; 06 · Duo de Rue</span>
+                <span>Day 1 / 2 Afternoon</span>
+              </div>
+            </div>
+            <div class="dish-info">
+              <div class="dish-meta-row">
+                <span class="badge badge-time">1일/2일 오후</span>
+                <span class="badge badge-ok">떡볶이·오뎅 구매완료</span>
+                <span class="badge badge-patron">찬조: 범규(교자2)·영진(밀가루)</span>
+              </div>
+              <span class="dish-fr-name">Gâteaux de Riz Impériaux &amp; Gyoza « Bibigo » en Dentelle</span>
+              <h3 class="dish-kr-name">로얄 밀키트 떡볶이 &amp; 눈꽃 날개 비비고 교자</h3>
+              <p class="dish-desc">
+                저녁 만찬을 기다리다 지친 영혼들을 위한 오후의 구원자. 이미 구매 완료된 밀키트 떡볶이·어묵 듀오가 달콤매콤한 벨벳 글레이즈를 뽐낼 때, <strong>범규 공작의 비비고 교자 2봉지</strong>와 <strong>영진의 밀가루</strong>가 만나 바삭한 눈꽃 날개 군만두로 탄생해 떡볶이 소스에 완벽히 적셔집니다.
+              </p>
+              <div class="dish-ingredients">
+                <strong>떡볶이:</strong> 밀키트 떡볶이, 오뎅(구매완료) · <strong>만두:</strong> 비비고교자 2개(범규), 밀가루(영진)
+              </div>
+            </div>
+          </article>
+
+          <article class="course-block is-reversed">
+            <div class="dish-photo-card">
+              <img src="images/06_pasta_kimchi.jpg" alt="아티장 파스타와 바삭한 김치 갈레트" />
+              <div class="photo-caption">
+                <span>Plat 07 &amp; 14 · Est &amp; Ouest</span>
+                <span>Afternoon &amp; Anju</span>
+              </div>
+            </div>
+            <div class="dish-info">
+              <div class="dish-meta-row">
+                <span class="badge badge-time">1일/2일 오후 &amp; 안주</span>
+                <span class="badge badge-patron">호준(면 4봉) · 영진(김치/가루)</span>
+              </div>
+              <span class="dish-fr-name">Quatre Pâtes pour Trois Sauces &amp; Galette de Kimchi</span>
+              <h3 class="dish-kr-name">3소스×4봉지 파스타 챌린지 &amp; 바삭한 김치 갈레트</h3>
+              <p class="dish-desc">
+                이탈리아와 한국의 국경을 허무는 오후의 더블 코스. <strong>파스타 소스 3통</strong>에 <strong>호준의 파스타면 4봉지</strong>를 맞추는 긴장감 넘치는 수분-농도 조절의 미학이 펼쳐지고, 옆 프라이팬에서는 영진표 김치·부침가루·튀김가루 황금 배합으로 구워낸 초바삭 김치전 갈레트가 자태를 뽐냅니다.
+              </p>
+              <div class="dish-ingredients">
+                <strong>파스타:</strong> 파스타 소스 3통 + 파스타면 4봉(호준) · <strong>김치전:</strong> 김치(영진구매 완료) + 부침/튀김가루(영진)
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <footer class="page-footer">
+          <span>Acte III · Bistrot d'Après-Midi</span>
+          <span>Page 05 / 10</span>
+        </footer>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 6: ACT IV-A — ANJU 01 ~ 04 ==================== -->
+    <section class="menu-page" data-page="6">
+      <div class="page-frame">
+        <span class="corner corner-tl"></span><span class="corner corner-tr"></span>
+        <span class="corner corner-bl"></span><span class="corner corner-br"></span>
+
+        <header class="page-header">
+          <p class="act-eyebrow">Acte IV-A · Les 16 Amuse-Bouches de Minuit (N° 01–04)</p>
+          <h2 class="act-title">16가지 심야 안주 ①: 뜨겁고 매운 밤의 컨소메</h2>
+          <p class="act-subtitle">Oden de Samjin, Chrysalide Sauvage, Jjamppong &amp; Dakbal 1.8kg</p>
+        </header>
+
+        <div class="course-stack">
+          <article class="course-block">
+            <div class="dish-photo-card">
+              <img src="images/07_jjamppong_odeng.jpg" alt="해물짬뽕탕과 삼진어묵탕 듀오" />
+              <div class="photo-caption">
+                <span>Anju N° 01 &amp; N° 03 · Bouillons</span>
+                <span>Midnight Soup Duo</span>
+              </div>
+            </div>
+            <div class="dish-info">
+              <div class="dish-meta-row">
+                <span class="badge badge-anju">ANJU N° 01 · 오뎅탕</span>
+                <span class="badge badge-anju">ANJU N° 03 · 해물짬뽕탕</span>
+                <span class="badge badge-ok">영진(삼진어묵)·현미(컬리) 구매완료</span>
+              </div>
+              <span class="dish-fr-name">Consommé de Samjin &amp; Bouillabaisse Rouge de Kurly</span>
+              <h3 class="dish-kr-name">N° 01 삼진어묵탕 · N° 03 컬리 해물짬뽕탕</h3>
+              <p class="dish-desc">
+                <strong>[N° 01 오뎅탕]</strong> 영진이 부산 명가 삼진어묵으로 미리 확보해 둔 깊고 맑은 어육수 컨소메.<br />
+                <strong>[N° 03 해물짬뽕탕]</strong> 현미 소믈리에가 마켓컬리에서 공수한 불향 가득 얼큰한 해물 육수. 밤이 깊어질수록 국자 회전수가 빨라집니다.
+              </p>
+              <div class="dish-ingredients">
+                <strong>재료:</strong> 오뎅(삼진어묵탕 영진구매 완료), 짬뽕탕밀키트(컬리/현미구매)
+              </div>
+            </div>
+          </article>
+
+          <article class="course-block is-reversed">
+            <div class="dish-photo-card">
+              <img src="images/08_dakbal.jpg" alt="스타우브 냄비에 담긴 미슐랭 국물닭발" />
+              <div class="photo-caption">
+                <span>Anju N° 02 &amp; N° 04 · Audace &amp; Collagène</span>
+                <span>Spicy &amp; Avant-Garde</span>
+              </div>
+            </div>
+            <div class="dish-info">
+              <div class="dish-meta-row">
+                <span class="badge badge-anju">ANJU N° 02 · 번데기탕</span>
+                <span class="badge badge-anju">ANJU N° 04 · 국물닭발</span>
+                <span class="badge badge-ok">닭발 1.8kg 영진구매 완료</span>
+              </div>
+              <span class="dish-fr-name">Chrysalide au Piment Cheongyang &amp; Patte de Poulet 1.8kg</span>
+              <h3 class="dish-kr-name">N° 02 청양고추 번데기탕 · N° 04 1.8kg 국물닭발</h3>
+              <p class="dish-desc">
+                <strong>[N° 02 번데기탕]</strong> 통조림 2~3캔에서 갓 깨어난 야생의 단백질에 알싸한 청양고추를 송송 썰어 넣은, 술자리 감성 100% 아방가르드 브로스.<br />
+                <strong>[N° 04 국물닭발]</strong> 닭발 900g×2팩, 총 1.8kg의 압도적 콜라겐 스튜! 입술이 붙는 강렬한 매운맛으로 야식의 왕좌를 지킵니다.
+              </p>
+              <div class="dish-ingredients">
+                <strong>재료:</strong> 번데기 통조림 2~3개 + 청양고추 / 닭발 900g × 2개(영진구매 완료)
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <footer class="page-footer">
+          <span>Acte IV-A · Anju N° 01–04</span>
+          <span>Page 06 / 10</span>
+        </footer>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 7: ACT IV-B — ANJU 05 ~ 09 ==================== -->
+    <section class="menu-page" data-page="7">
+      <div class="page-frame">
+        <span class="corner corner-tl"></span><span class="corner corner-tr"></span>
+        <span class="corner corner-bl"></span><span class="corner corner-br"></span>
+
+        <header class="page-header">
+          <p class="act-eyebrow">Acte IV-B · Les 16 Amuse-Bouches de Minuit (N° 05–09)</p>
+          <h2 class="act-title">16가지 심야 안주 ②: 치즈·샐러드·김치전·브륄레·황태</h2>
+          <p class="act-subtitle">Fromage, Chou au Périlla, Galette de Kimchi, Banane Brûlée &amp; Morue</p>
+        </header>
+
+        <div class="course-stack">
+          <article class="course-block is-reversed">
+            <div class="dish-photo-card">
+              <img src="images/12_banana_brulee.jpg" alt="토치로 캐러멜라이징한 바나나 브륄레와 샤인머스캣, 감귤, 군고구마" />
+              <div class="photo-caption">
+                <span>Anju N° 08 · Banane Brûlée</span>
+                <span>Torch Signature</span>
+              </div>
+            </div>
+            <div class="dish-info">
+              <div class="dish-meta-row">
+                <span class="badge badge-anju">ANJU N° 08 · 바나나 브륄레</span>
+                <span class="badge badge-time">캠핑 토치 쇼</span>
+              </div>
+              <span class="dish-fr-name">Banane Brûlée au Chalumeau de Camping</span>
+              <h3 class="dish-kr-name">N° 08 캠핑 토치 바나나 브륄레</h3>
+              <p class="dish-desc">
+                무려 부탄가스 8통과 이소가스가 대기 중인 진정한 이유! 잘 익은 바나나에 설탕 코팅을 올려 캠핑 토치로 바삭하게 구워내, 스푼으로 유리막 깨듯 톡 깨 먹는 미슐랭 3스타급 심야 달콤 안주입니다.
+              </p>
+              <div class="dish-ingredients">
+                <strong>재료:</strong> 바나나 (과일 코너 병행 조달) + 설탕 + 캠핑 토치 화력
+              </div>
+            </div>
+          </article>
+
+          <div class="mini-course-grid">
+            <article class="mini-dish-card">
+              <div class="dish-meta-row">
+                <span class="badge badge-anju">ANJU N° 05 · 와인용 치즈</span>
+                <span class="badge badge-ok">영진구매 완료</span>
+              </div>
+              <span class="dish-fr-name">Sélection Fromagère pour PicNic Wine</span>
+              <h4>N° 05 와인용 부티크 치즈</h4>
+              <p class="dish-desc">
+                소모품의 <em>‘피크닉 와인잔’</em>을 빛내기 위해 영진이 미리 구비해 둔 치즈 셀렉션. 모닥불 옆 야외 살롱을 완성합니다.
+              </p>
+            </article>
+
+            <article class="mini-dish-card">
+              <div class="dish-meta-row">
+                <span class="badge badge-anju">ANJU N° 06 · 양배추들기름샐러드</span>
+                <span class="badge badge-patron">찬조: 들기름(영진)</span>
+              </div>
+              <span class="dish-fr-name">Salade de Chou à l'Huile de Périlla</span>
+              <h4>N° 06 양배추 들기름 샐러드</h4>
+              <p class="dish-desc">
+                아삭한 양배추에 영진의 고소한 들기름을 두른 K-오리엔탈 샐러드. 묵직한 고기·닭발 사이 입안을 씻어주는 천사 같은 안주.
+              </p>
+            </article>
+
+            <article class="mini-dish-card">
+              <div class="dish-meta-row">
+                <span class="badge badge-anju">ANJU N° 07 · 김치전</span>
+                <span class="badge badge-ok">김치·가루(영진) 완료</span>
+              </div>
+              <span class="dish-fr-name">Galette Croustillante au Kimchi</span>
+              <h4>N° 07 크리스피 김치전</h4>
+              <p class="dish-desc">
+                영진이 김치에 부침가루와 튀김가루까지 완벽 세트로 챙긴 황금 배합. 빗소리(혹은 장작 소리)가 나면 무조건 부쳐야 하는 국룰.
+              </p>
+            </article>
+
+            <article class="mini-dish-card">
+              <div class="dish-meta-row">
+                <span class="badge badge-anju">ANJU N° 09 · 황태채</span>
+                <span class="badge badge-time">마른안주 클래식</span>
+              </div>
+              <span class="dish-fr-name">Morue Séchée des Montagnes</span>
+              <h4>N° 09 덕장 황태채</h4>
+              <p class="dish-desc">
+                배가 한계치에 달했을 때 비로소 빛나는 영원의 클래식. 마요네즈·간장·청양고추 3종 디핑을 곁들이면 새벽 토크가 끝이 없습니다.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <footer class="page-footer">
+          <span>Acte IV-B · Anju N° 05–09</span>
+          <span>Page 07 / 10</span>
+        </footer>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 8: ACT IV-C — ANJU 10 ~ 16 ==================== -->
+    <section class="menu-page" data-page="8">
+      <div class="page-frame">
+        <span class="corner corner-tl"></span><span class="corner corner-tr"></span>
+        <span class="corner corner-bl"></span><span class="corner corner-br"></span>
+
+        <header class="page-header">
+          <p class="act-eyebrow">Acte IV-C · Les 16 Amuse-Bouches de Minuit (N° 10–16)</p>
+          <h2 class="act-title">16가지 심야 안주 ③: 어부의 밤, 계란 30구 &amp; 스팸</h2>
+          <p class="act-subtitle">Rascasse, Maquereau, Seiche, Œufs d'Or, Terrine de Spam &amp; Toast</p>
+        </header>
+
+        <div class="course-stack">
+          <article class="course-block">
+            <div class="dish-photo-card">
+              <img src="images/09_fish_cuttlefish.jpg" alt="숯불 생선구이(우럭·고등어)와 버터 갑오징어 구이" />
+              <div class="photo-caption">
+                <span>Anju N° 10, 11 &amp; 12 · Mer de Beom-gyu</span>
+                <span>Seafood Trio</span>
+              </div>
+            </div>
+            <div class="dish-info">
+              <div class="dish-meta-row">
+                <span class="badge badge-anju">ANJU N° 10 · 우럭구이</span>
+                <span class="badge badge-anju">ANJU N° 11 · 고등어구이</span>
+                <span class="badge badge-anju">ANJU N° 12 · 갑오징어버터구이</span>
+              </div>
+              <span class="dish-fr-name">Rascasse &amp; Maquereau Grillés (×3) et Seiche au Beurre</span>
+              <h3 class="dish-kr-name">N° 10 우럭 · N° 11 고등어(3마리) · N° 12 갑오징어 버터구이</h3>
+              <p class="dish-desc">
+                <strong>범규 어부</strong>가 통 크게 찬조한 해산물 3종 세트! 바삭한 껍질 속 촉촉한 흰 살이 살아있는 <strong>우럭구이(N° 10)</strong>와 기름진 풍미의 <strong>고등어구이(N° 11)</strong> 도합 3마리, 그리고 버터를 머금고 쫄깃하게 구워진 <strong>갑오징어버터구이(N° 12)</strong>까지 바다가 캠핑장에 상륙합니다.
+              </p>
+              <div class="dish-ingredients">
+                <strong>재료 &amp; 찬조:</strong> 생선구이(우럭, 고등어) 3마리(범규) + 갑오징어(범규) + 버터
+              </div>
+            </div>
+          </article>
+
+          <article class="course-block is-reversed">
+            <div class="dish-photo-card">
+              <img src="images/11_eggs_cabbage.jpg" alt="미슐랭 스타일 계란말이, 계란후라이, 들기름 양배추 샐러드" />
+              <div class="photo-caption">
+                <span>Anju N° 13 &amp; N° 14 · 30 Œufs d'Or</span>
+                <span>Egg Craft</span>
+              </div>
+            </div>
+            <div class="dish-info">
+              <div class="dish-meta-row">
+                <span class="badge badge-anju">ANJU N° 13 · 계란후라이</span>
+                <span class="badge badge-anju">ANJU N° 14 · 계란말이</span>
+                <span class="badge badge-patron">계란 30구(형근) · 케찹/마요(영진)</span>
+              </div>
+              <span class="dish-fr-name">Œuf Miroir &amp; Omelette Roulée (Ketchup &amp; Mayo)</span>
+              <h3 class="dish-kr-name">N° 13 계란후라이 · N° 14 계란말이 아트워크</h3>
+              <p class="dish-desc">
+                형근 남작이 공수한 <strong>계란 30구</strong>의 위엄! 완숙·반숙 취향을 모두 포용하는 <strong>계란후라이(N° 13)</strong>와 도톰하게 말아 썰어낸 <strong>계란말이(N° 14)</strong> 위에 영진표 케찹과 마요네즈가 인상파 붓터치처럼 내려앉습니다.
+              </p>
+              <div class="dish-ingredients">
+                <strong>재료 &amp; 찬조:</strong> 계란 30구(형근구매) + 케찹, 마요네즈(영진)
+              </div>
+            </div>
+          </article>
+
+          <div class="mini-course-grid">
+            <article class="mini-dish-card">
+              <div class="dish-meta-row">
+                <span class="badge badge-anju">ANJU N° 15 · 스팸구이</span>
+                <span class="badge badge-patron">찬조: 영진</span>
+              </div>
+              <span class="dish-fr-name">Terrine de Porc Salée Dorée</span>
+              <h4>N° 15 골든 시어드 스팸구이</h4>
+              <p class="dish-desc">
+                노릇하게 겉면을 시어링한 육즙의 황금 사각형 테린. 햇반과 함께해도, 소주잔과 함께해도 무패를 자랑하는 영진 찬조의 절대 강자.
+              </p>
+            </article>
+
+            <article class="mini-dish-card">
+              <div class="dish-meta-row">
+                <span class="badge badge-anju">ANJU N° 16 · 계란토스트</span>
+                <span class="badge badge-patron">형근구매: 계란·식빵</span>
+              </div>
+              <span class="dish-fr-name">Pain Doré Nocturne &amp; Matinal</span>
+              <h4>N° 16 버터 계란토스트 (심야·브런치 겸용)</h4>
+              <p class="dish-desc">
+                16대 안주의 대미를 장식하는 형근의 계란·식빵 컬래버레이션! 밤에는 달콤짭짤한 야식 토스트로, 아침에는 아메리카노와 함께하는 브리오슈 브런치로 변신합니다.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <footer class="page-footer">
+          <span>Acte IV-C · Anju N° 10–16</span>
+          <span>Page 08 / 10</span>
+        </footer>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 9: ACT V — MORNING & SNACKS ==================== -->
+    <section class="menu-page" data-page="9">
+      <div class="page-frame">
+        <span class="corner corner-tl"></span><span class="corner corner-tr"></span>
+        <span class="corner corner-bl"></span><span class="corner corner-br"></span>
+
+        <header class="page-header">
+          <p class="act-eyebrow">Acte V · Le Réveil &amp; Chariot de Douceurs</p>
+          <h2 class="act-title">2·3일차 아침 해장 대전 &amp; 주전부리·과일 트롤리</h2>
+          <p class="act-subtitle">Duel de 20 Ramens, Nurungji, Fruits &amp; Collations</p>
+        </header>
+
+        <div class="course-stack">
+          <article class="course-block">
+            <div class="dish-photo-card">
+              <img src="images/13_ramen.jpg" alt="미슐랭 스타일 스파이시 코리안 라면" />
+              <div class="photo-caption">
+                <span>Plat Matinal · Shin vs. Jin (20 Paquets)</span>
+                <span>Day 2 / 3 Morning</span>
+              </div>
+            </div>
+            <div class="dish-info">
+              <div class="dish-meta-row">
+                <span class="badge badge-time">2일/3일 아침 메인</span>
+                <span class="badge badge-warn">신라면 10봉 구매예정</span>
+                <span class="badge badge-patron">진라면 10봉(영진)</span>
+              </div>
+              <span class="dish-fr-name">Grand Duel Matinal : Shin Ramen (×10) vs. Jin Ramen (×10)</span>
+              <h3 class="dish-kr-name">총 20봉 격돌! 신라면 vs 진라면 해장 라면 대전</h3>
+              <p class="dish-desc">
+                전날 밤 16가지 안주를 정복한 용사들을 일으켜 세우는 아침의 대격돌! 구매 예정인 <strong>신라면 10봉</strong> 파벌과 영진이 찬조한 <strong>진라면 10봉</strong> 파벌이 총 20봉의 화력으로 캠핑장 아침을 지배합니다.
+              </p>
+              <div class="dish-ingredients">
+                <strong>라면 대전:</strong> 신라면 10봉(구매 예정) vs 진라면 10봉(영진) + 계란·콩나물·다진마늘·파(옵션)
+              </div>
+            </div>
+          </article>
+
+          <div class="mini-course-grid">
+            <article class="mini-dish-card">
+              <div class="dish-meta-row">
+                <span class="badge badge-time">2일/3일 아침 힐링</span>
+              </div>
+              <span class="dish-fr-name">Bouillon Apaisant de Nurungji</span>
+              <h4>구수한 황금 누룽지 컨소메</h4>
+              <p class="dish-desc">
+                속을 부드럽게 감싸주는 구수한 숭늉과 누룽지 코스. 영진이 찬조한 <strong>김·캔참치</strong>, <strong>햇반</strong>과 만나면 가장 한국적인 모닝 리커버리가 완성됩니다.
+              </p>
+            </article>
+
+            <article class="mini-dish-card">
+              <div class="dish-meta-row">
+                <span class="badge badge-patron">고구마(이수) · 김/캔참치(영진)</span>
+                <span class="badge badge-time">과일 &amp; 주전부리</span>
+              </div>
+              <span class="dish-fr-name">Le Chariot de Fruits &amp; Snacks</span>
+              <h4>과일류 &amp; 심심풀이 주전부리 풀세트</h4>
+              <p class="dish-desc">
+                청량한 <strong>샤인머스캣·감귤·바나나</strong>, 모닥불에 구워 먹는 <strong>고구마(이수)</strong>, 손이 멈추지 않는 <strong>과자</strong>, 그리고 간편 샐러드·안주용 <strong>크래미·김·캔참치(영진)</strong>까지 쉴 틈 없는 간식 트롤리!
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <footer class="page-footer">
+          <span>Acte V · Le Réveil &amp; Douceurs</span>
+          <span>Page 09 / 10</span>
+        </footer>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 10: CELLAR & 100% INVENTORY ==================== -->
+    <section class="menu-page" data-page="10">
+      <div class="page-frame">
+        <span class="corner corner-tl"></span><span class="corner corner-tr"></span>
+        <span class="corner corner-bl"></span><span class="corner corner-br"></span>
+
+        <header class="page-header">
+          <p class="act-eyebrow">La Cave, 16 Amuse-Bouches &amp; Inventaire Total</p>
+          <h2 class="act-title">16대 안주 스탬프 보드 · 셀러 · 전 식자재 체크</h2>
+          <p class="act-subtitle">Zéro Oubli — 100% des Ingrédients &amp; Accessoires Certifiés</p>
+        </header>
+
+        <div class="logistics-box" style="margin-bottom: 1.25rem;">
+          <h3>🏆 16가지 심야 안주 완전 정복 스탬프 보드 (누락 0%)</h3>
+          <div class="anju-stamp-grid">
+            <div class="anju-stamp"><strong>N° 01</strong>오뎅탕 (삼진어묵·영진)</div>
+            <div class="anju-stamp"><strong>N° 02</strong>번데기탕 (2~3캔·청양)</div>
+            <div class="anju-stamp"><strong>N° 03</strong>해물짬뽕탕 (컬리·현미)</div>
+            <div class="anju-stamp"><strong>N° 04</strong>국물닭발 (900g×2·영진)</div>
+            <div class="anju-stamp"><strong>N° 05</strong>와인용 치즈 (영진완료)</div>
+            <div class="anju-stamp"><strong>N° 06</strong>양배추들기름샐러드</div>
+            <div class="anju-stamp"><strong>N° 07</strong>김치전 (영진 풀세트)</div>
+            <div class="anju-stamp"><strong>N° 08</strong>바나나 브륄레 (토치)</div>
+            <div class="anju-stamp"><strong>N° 09</strong>황태채 (클래식)</div>
+            <div class="anju-stamp"><strong>N° 10</strong>우럭구이 (범규 3마리 중)</div>
+            <div class="anju-stamp"><strong>N° 11</strong>고등어구이 (범규 3마리 중)</div>
+            <div class="anju-stamp"><strong>N° 12</strong>갑오징어버터구이 (범규)</div>
+            <div class="anju-stamp"><strong>N° 13</strong>계란후라이 (형근 30구)</div>
+            <div class="anju-stamp"><strong>N° 14</strong>계란말이 (케찹·마요)</div>
+            <div class="anju-stamp"><strong>N° 15</strong>스팸구이 (영진 찬조)</div>
+            <div class="anju-stamp"><strong>N° 16</strong>계란토스트 (형근 식빵)</div>
+          </div>
+        </div>
+
+        <div class="cellar-grid">
+          <article class="cellar-card is-mystery">
+            <span class="cellar-type">Special Request · 01</span>
+            <h3>의문의 “청종?? 백화수복”</h3>
+            <p class="dish-desc">
+              요청사항 메모란에 암호처럼 남겨진 한 줄: <strong>“청종?? 백화수복”</strong>. 정종을 뜻하는 오타인가, 새로운 시그니처 주류의 탄생인가? 소믈리에 팀이 진위를 추적 중입니다.
+            </p>
+          </article>
+
+          <article class="cellar-card">
+            <span class="cellar-type">Morning &amp; Hangover · 02</span>
+            <h3>“아메리카노 2리터 사주세요!” &amp; 갈아만든배</h3>
+            <p class="dish-desc">
+              사이다 2L, 콜라 2L, 생수 12통, 카누와 함께 긴급 요청된 <strong>아메리카노 2L</strong>, 그리고 물음표가 핵심인 <strong>“갈아만든배(숙취해소?)”</strong>가 대기 중입니다.
+            </p>
+          </article>
+
+          <article class="cellar-card">
+            <span class="cellar-type">Glassware · 03</span>
+            <h3>피크닉 와인잔 · 소주잔 · 종이컵</h3>
+            <p class="dish-desc">
+              우아한 <strong>피크닉 와인잔</strong>, 실속파 <strong>일회용 소주잔</strong>, 경민이 챙긴 <strong>종이컵(소·대) 1줄씩</strong>까지 모든 주종에 대응합니다.
+            </p>
+          </article>
+        </div>
+
+        <div class="logistics-columns">
+          <div class="logistics-box">
+            <h3>✅ 기본구매·채소·소모품 100% 전수 리스트</h3>
+            <p style="font-size:0.8rem; color:var(--ink-secondary); margin:0 0 0.4rem;">
+              엑셀표 기본구매·장보기완료·소모품의 모든 품목을 누락 없이 기록했습니다:
+            </p>
+            <div class="pantry-tags">
+              <span class="pantry-tag">상추</span><span class="pantry-tag">깻잎</span><span class="pantry-tag">양파</span><span class="pantry-tag">버섯</span><span class="pantry-tag">마늘</span><span class="pantry-tag">고추</span><span class="pantry-tag">쌈무</span><span class="pantry-tag">미나리</span><span class="pantry-tag">고사리</span><span class="pantry-tag">숙주</span><span class="pantry-tag">콩나물</span><span class="pantry-tag">양배추</span><span class="pantry-tag">피망</span><span class="pantry-tag">샐러드일체(양상추,소스)</span>
+              <span class="pantry-tag">파스타소스 3통</span><span class="pantry-tag">참소스</span><span class="pantry-tag">버터</span><span class="pantry-tag">크래미</span><span class="pantry-tag">소세지</span><span class="pantry-tag">마요네즈</span><span class="pantry-tag">다진마늘(영진)</span><span class="pantry-tag">양념통/식용유(영진,범규)</span><span class="pantry-tag">햇반</span><span class="pantry-tag">생수 12통</span><span class="pantry-tag">과자</span><span class="pantry-tag">카누</span><span class="pantry-tag">김/캔참치(영진)</span>
+              <span class="pantry-tag">부탄가스 8</span><span class="pantry-tag">이소가스</span><span class="pantry-tag">호일</span><span class="pantry-tag">물티슈</span><span class="pantry-tag">쓰봉(영진)</span><span class="pantry-tag">휴지 2(종주)</span><span class="pantry-tag">키친타올</span><span class="pantry-tag">일회용접시</span><span class="pantry-tag">일회용국그릇</span><span class="pantry-tag">일회용 숟가락</span><span class="pantry-tag">일회용젓가락(영진,이수)</span><span class="pantry-tag">일회용소주잔</span><span class="pantry-tag">종이컵(소,대) 1줄씩(경민)</span><span class="pantry-tag">피크닉와인잔</span>
+            </div>
+          </div>
+
+          <div class="logistics-box is-urgent">
+            <h3>🚨 셰프 긴급 요청사항 &amp; 미구매 체크</h3>
+            <ul class="check-list">
+              <li><strong>긴급 요청 1:</strong> 보일링시푸드용 <strong>비엔나 소세지</strong> 구매 부탁드립니다!</li>
+              <li><strong>긴급 요청 2:</strong> <strong>아메리카노 2리터 사주세요!</strong></li>
+              <li><strong>긴급 요청 3:</strong> 미스터리 주류 <strong>청종?? 백화수복</strong></li>
+              <li><strong>구매 예정·미완료 체크:</strong> 고기류(삼겹·목살·찌개류 옵션), 신라면 10봉(구매 예정), 사이다 2L, 콜라 2L, 갈아만든배(숙취해소?), 번데기 2~3캔, 누룽지, 기본구매 야채·부재료 일체</li>
+            </ul>
+          </div>
+        </div>
+
+        <footer class="page-footer">
+          <span>Fin · Bonne Dégustation</span>
+          <span>Page 10 / 10</span>
+        </footer>
+      </div>
+    </section>
+
+  </main>
+
+  <nav class="bottom-pager" aria-label="하단 페이지 이동">
+    <button id="bottomPrevBtn" class="ctrl-btn" type="button">← 이전 페이지</button>
+    <span id="bottomCounter" class="page-counter">PAGE 01 / 10</span>
+    <button id="bottomNextBtn" class="ctrl-btn" type="button">다음 페이지 →</button>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
